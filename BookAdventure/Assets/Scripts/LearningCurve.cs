@@ -57,6 +57,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
         // The dollar sign $ lets you embed variables into a string!!!
         Debug.Log($"{FirstName} wrote this code!");
         Debug.Log($"{CharacterName} is the protagonist!");
+
+        Character hero = new Character();
+        Character heroine = new Character("Agatha");
+        Debug.LogFormat("Hero: {0} - {1} EXP", heroine.name, heroine.exp);
+        Debug.LogFormat("Hero: {0} - {1} EXP", hero.name, hero.exp);
+      
     }
 
     public int GenerateCharacter(string name, int level)

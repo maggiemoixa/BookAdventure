@@ -276,6 +276,10 @@ MonoBehaviour:
   FirstName: Maggie
   CharacterName: Doodoo
   IsAuthor: 1
+  PureOfHeart: 1
+  HasSecretIncantation: 0
+  RareItem: Relic Stone
+  CharacterAction: Attack
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +470,10 @@ MonoBehaviour:
   FirstName: Maggie
   CharacterName: Doodoo
   IsAuthor: 1
+  PureOfHeart: 1
+  HasSecretIncantation: 0
+  RareItem: Relic Stone
+  CharacterAction: Attack
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
