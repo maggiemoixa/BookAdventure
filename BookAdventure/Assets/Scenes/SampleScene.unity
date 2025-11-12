@@ -280,6 +280,9 @@ MonoBehaviour:
   HasSecretIncantation: 0
   RareItem: Relic Stone
   CharacterAction: Attack
+  CamTransform: {fileID: 0}
+  DirectionLight: {fileID: 410087039}
+  LightTransform: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +477,9 @@ MonoBehaviour:
   HasSecretIncantation: 0
   RareItem: Relic Stone
   CharacterAction: Attack
+  CamTransform: {fileID: 0}
+  DirectionLight: {fileID: 0}
+  LightTransform: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

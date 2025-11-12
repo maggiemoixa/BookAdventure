@@ -22,6 +22,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public bool HasSecretIncantation = false;
     public string RareItem = "Relic Stone";
     public string CharacterAction = "Attack";
+    public Transform CamTransform;
+    public GameObject DirectionLight;
+    public Transform LightTransform;
 
     List<string> QuestPartyMembers = new List<string>()
     {
@@ -40,6 +43,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        CamTransform = this.GetComponent<Transform>();
+        Debug.Log(CamTransform.localPosition);
+
+        //DirectionLight = GameObject.Find("Directional Light");
+        LightTransform = DirectionLight.GetComponent<Transform>();
+        Debug.Log(LightTransform.localPosition);
+
+        
         int characterLevel = 32;
         int NextSkillLevel = GenerateCharacter("Jill", characterLevel);
         Debug.Log(NextSkillLevel);
@@ -59,10 +70,26 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Debug.Log($"{CharacterName} is the protagonist!");
 
         Character hero = new Character();
+        hero.PrintStatsInfo();
         Character heroine = new Character("Agatha");
-        Debug.LogFormat("Hero: {0} - {1} EXP", heroine.name, heroine.exp);
-        Debug.LogFormat("Hero: {0} - {1} EXP", hero.name, hero.exp);
-      
+        heroine.PrintStatsInfo();
+        Character villain = hero;
+        villain.name = "Sir Kane the Bold";
+        villain.PrintStatsInfo();
+       
+
+
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        huntingBow.PrintWeaponStats();
+        Weapon warBow = huntingBow;
+        warBow.name = "War Bow";
+        warBow.damage = 6767;
+        warBow.PrintWeaponStats();
+
+        Paladin knight = new Paladin("Sir Arthur", huntingBow);
+        knight.PrintStatsInfo();
+
+
     }
 
     public int GenerateCharacter(string name, int level)
@@ -113,10 +140,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             Debug.Log("Come back when you have what it takes.");
         }
-    }
-        // Update is called once per frame
-        void Update()
-    {
         
     }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    
+     
+
+
 }
