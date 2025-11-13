@@ -46,7 +46,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         CamTransform = this.GetComponent<Transform>();
         Debug.Log(CamTransform.localPosition);
 
-        //DirectionLight = GameObject.Find("Directional Light");
+        DirectionLight = GameObject.Find("Directional Light");
         LightTransform = DirectionLight.GetComponent<Transform>();
         Debug.Log(LightTransform.localPosition);
 
