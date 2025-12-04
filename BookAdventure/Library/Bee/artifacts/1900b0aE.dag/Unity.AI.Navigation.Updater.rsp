@@ -394,13 +394,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/NavigationConverterContainer.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/NavigationUpdaterEditor.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/NavMeshSceneConverter.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/NavMeshUpdaterUtility.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/OffMeshLinkConverter.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Editor/Updater/OffMeshLinkUpdaterUtility.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/NavigationConverterContainer.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/NavigationUpdaterEditor.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/NavMeshSceneConverter.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/NavMeshUpdaterUtility.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/OffMeshLinkConverter.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Editor/Updater/OffMeshLinkUpdaterUtility.cs"
 -langversion:9.0
 /deterministic
 /optimize+

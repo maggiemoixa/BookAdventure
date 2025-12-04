@@ -9,13 +9,13 @@
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
-    "com.unity.ai.navigation@2.0.8": {
+    "com.unity.ai.navigation@2.0.9": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
-      "resolvedPath": "C:\\BookAdventure\\BookAdventure\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d",
-      "fingerprint": "eb5635ad590d47cef2a5c920d9475cc222db3f67",
+      "resolvedPath": "C:\\BookAdventure\\BookAdventure\\Library\\PackageCache\\com.unity.ai.navigation@5218e4bf7edc",
+      "fingerprint": "5218e4bf7edc04fcad4ed3836c1c41aef334b996",
       "editorCompatibility": "6000.0.0a1",
-      "version": "2.0.8",
+      "version": "2.0.9",
       "source": "registry",
       "testable": false
     },

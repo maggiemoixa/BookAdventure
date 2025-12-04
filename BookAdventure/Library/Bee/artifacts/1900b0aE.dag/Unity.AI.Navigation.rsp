@@ -386,13 +386,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/HelpUrls.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/NavMeshLink.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/NavMeshLink.deprecated.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/NavMeshModifier.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/NavMeshModifierVolume.cs"
-"Library/PackageCache/com.unity.ai.navigation@eb5635ad590d/Runtime/NavMeshSurface.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/HelpUrls.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/NavMeshLink.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/NavMeshLink.deprecated.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/NavMeshModifier.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/NavMeshModifierVolume.cs"
+"Library/PackageCache/com.unity.ai.navigation@5218e4bf7edc/Runtime/NavMeshSurface.cs"
 -langversion:9.0
 /deterministic
 /optimize+

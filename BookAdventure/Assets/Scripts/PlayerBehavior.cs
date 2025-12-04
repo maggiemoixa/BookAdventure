@@ -23,6 +23,7 @@ public class PlayerBehavior : MonoBehaviour
     public float BulletSpeed = 100f;
 
     private bool _isShooting;
+    private GameBehavior _gameManager;
 
 
 
@@ -34,6 +35,8 @@ public class PlayerBehavior : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
 
         _col = GetComponent<CapsuleCollider>();
+
+        _gameManager = GameObject.Find ("Game Manager").GetComponent<GameBehavior>();
 
     }
 
@@ -119,4 +122,17 @@ public class PlayerBehavior : MonoBehaviour
 
     }
     // code for ensuring you can't jump in the air, but i'm pretty sure you can still jump in the air.
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Enemy")
+        {
+            _gameManager.HP -= 1;
+        }
+
+
+    }
+
+
+
 }
