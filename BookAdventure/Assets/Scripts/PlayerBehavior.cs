@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    // 1
+
     public float MoveSpeed = 10f;
     public float RotateSpeed = 75f;
     private float _vInput;
@@ -25,7 +25,8 @@ public class PlayerBehavior : MonoBehaviour
     private bool _isShooting;
     private GameBehavior _gameManager;
 
-
+    public delegate void JumpingEvent();
+    public event JumpingEvent playerJump;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -76,12 +77,13 @@ public class PlayerBehavior : MonoBehaviour
 
 // jumping code
         
-        /*
-        if(_isJumping)
+        if(_isJumping && IsGrounded())
         {
-            _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
+            _rb.AddForce(Vector3.up * JumpVelocity,
+            ForceMode.Impulse);
+            // 3
+            playerJump();
         }
-        */
 
         
         if(IsGrounded() && _isJumping)

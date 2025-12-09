@@ -11,6 +11,28 @@ using System.Linq;
 
 public class GameBehavior : MonoBehaviour, IManager
 {
+    public PlayerBehavior playerBehavior;
+
+    void OnEnable()
+    {
+        GameObject player = GameObject.Find("Player");
+        playerBehavior = player.GetComponent<PlayerBehavior>();
+        playerBehavior.playerJump += HandlePlayerJump;
+        debug("Jump event subscribed...");
+    }
+
+    private void OnDisable()
+    {
+        playerBehavior.playerJump -= HandlePlayerJump;
+        debug("Jump event unsubscribed...");
+    }
+
+    public void HandlePlayerJump()
+    {
+        debug("Player has jumped...");
+    }
+
+
     public Stack<Loot> LootStack = new Stack<Loot>();
     private string _state;
 
@@ -26,6 +48,9 @@ public class GameBehavior : MonoBehaviour, IManager
     public TMP_Text ProgressText;
     public Button WinButton;
     public Button LossButton;
+
+    public delegate void DebugDelegate(string newText);
+    public DebugDelegate debug = Print;
 
 
     public void UpdateScene(string updatedText)
@@ -68,7 +93,7 @@ public class GameBehavior : MonoBehaviour, IManager
 
     public void RestartScene()
     {
-        Utilities.RestartLevel(0);
+        Utilities.RestartLevel(-1);
     }
 
 private int _playerHP = 10;
@@ -108,14 +133,31 @@ private int _playerHP = 10;
         _state.FancyDebug();
         Debug.Log(_state);
 
+        debug(_state);
+        LogWithDelegate(debug);
+
         LootStack.Push(new Loot("Sword of Doom", 5));
         LootStack.Push(new Loot("HP Boost", 1));
         LootStack.Push(new Loot("Golden Key", 3));
         LootStack.Push(new Loot("Pair of Winged Boots", 2));
         LootStack.Push(new Loot("Mythril Bracer", 4));
-
-
         FilterLoot();
+
+        var itemShop = new Shop<Collectable>();
+        itemShop.AddItem(new Potion());
+        itemShop.AddItem(new Antidote());
+        Debug.Log("Items for sale: " + itemShop.GetStockCount<Potion>());
+
+    }
+
+    public void LogWithDelegate(DebugDelegate del)
+    {
+        del("Delegating the debug task...");
+    }
+
+    public static void Print(string newText)
+    {
+        Debug.Log(newText);
     }
 
     public void PrintLootReport()
