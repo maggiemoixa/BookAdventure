@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
+using System.Collections.Generic;
 
 public struct Weapon
 {
